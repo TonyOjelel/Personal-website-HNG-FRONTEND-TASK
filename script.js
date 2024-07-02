@@ -1,9 +1,20 @@
-//  JavaScript to update time and day
+// //  JavaScript to update time and day
    
-        function updateTime() {
-            const now = new Date();
-            document.getElementById('utc-time').textContent = now.toUTCString();
-            document.getElementById('current-day').textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
-        }
-        updateTime();
-        setInterval(updateTime, 1000); // Update time every second
+//         function updateTime() {
+//             const now = new Date();
+//             document.getElementById('utc-time').textContent = now.toUTCString();
+//             document.getElementById('current-day').textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+//         }
+//         updateTime();
+//         setInterval(updateTime, 1000); // Update time every second
+
+// JavaScript to update time and day
+function updateTime() {
+    const now = new Date();
+    document.getElementById('utc-time').textContent = now.toISOString().replace('T', ' ').split('.')[0] + ' UTC';
+    document.getElementById('current-day').textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+  }
+  
+  updateTime();
+  setInterval(updateTime, 1000); // Update time every second
+  
