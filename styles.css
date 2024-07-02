@@ -1,0 +1,91 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .current-info, .links, .tech-goals {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  section h2 {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 16px; /* Adjust font size for readability */
+    }
+    
+    .profile-picture {
+      max-width: 100px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    p, a {
+      font-size: 1em;
+    }
+  }
+  
